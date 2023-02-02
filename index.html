@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitYourSelf - The Best Fitness Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class=" flex items-center logo font-bold text-blue">
+                    <img src="web-logo.jpg" class="logo-web" alt="logo-web">
+                    FitYourSelf
+                </div>
+                <ul class="navbar flex items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Services</a></li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen ">
+            <section class="section-1">
+                <div class="flex items-center">
+                    <div class="topleft flex justify-center flex-col  px-2">
+                        <div class="text-center">
+                            <img class="dumbellimg" src="dumbell.jpg" alt="dumbell">
+                        </div>
+
+                        <h1 class="my-1 text-center">The Best Fitness Gym In the Town</h1>
+                        <p class="text-center font-bold">
+                            <span>Affordable ||</span>
+                            <span>Best Service ||</span>
+                            <span>Hygienic</span>
+                        </p>
+                        <p class="text-center my-1 font-bold">The Offer is Valid For -</p>
+                        <p id="countdown" class="text-center">60:00</p>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gym" src="gym.jpg" alt="gym image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="importance" id="about">
+                <h1 class="text-center my-2"> Why Exercise is Important ?</h1>
+                <p>Whether you were once much more physically active or have never been one to exercise regularly, now
+                    is a great time to start an exercise and fitness regimen. Getting and staying in shape is just as
+                    important for seniors as it is for younger people.</p>
+                <br>
+                <p>When it comes to exercise and fitness for seniors, most can begin without consulting a doctor—but
+                    there are exceptions. If you have a major health condition like diabetes, high blood pressure, heart
+                    or lung disease, osteoprosis or a neurological disease, definitely talk to your doctor first. People
+                    with mobility issues such as poor balance or arthritis should also get advice from their doctor.</p>
+                <br>
+                <br>
+                <div class="Bmi my-2 flex flex-col">
+                    <h2 class="my-2">BMI Calculator</h2>
+                    <h4>Height (in cm) </h4>
+                    <input class="my-1" type="text" id="height">
+                    <h4>Weight (in Kg)</h4>
+                    <input class="my-1" type="text" id="weight">
+
+                    <button class="btn" id="button" onclick="BMI()"> Calculate</button>
+                    <h3 id="result" class="my-2"></h3>
+                </div>
+
+            </section>
+            <section class="section-2" id="pricing">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p>Exercising regularly, every day if possible, is the single most important thing you can do
+                    for your
+                    health. In the short term, exercise helps to control appetite, boost mood, and improve sleep. In the
+                    long term, it reduces the risk of heart disease, stroke, diabetes, dementia, depression, and many
+                    cancers.</p>
+                <br>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹100/month</li>
+                            <li>10 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">₹200/month</li>
+                            <li>100 users included</li>
+                            <li>20 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section-3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <ul class="flex justify-between padding-ul main">
+                    <li></li>
+                    <li class="font-bold">Free</li>
+                    <li class="font-bold">Pro</li>
+                    <li class="font-bold">Enterprise</li>
+                </ul>
+                <hr class="hr-bold">
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Public</li>
+                    <li class="check-2">&check;</li>
+                    <li class="check-2">&check;</li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr>
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Private</li>
+                    <li></li>
+                    <li class="check">&check;</li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr class="hr-bold">
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Sharing</li>
+                    <li></li>
+                    <li class="check">&check;</li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr>
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Trainer</li>
+                    <li></li>
+                    <li class="check">&check;</li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr>
+
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Extra security</li>
+                    <li></li>
+                    <li></li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr>
+                <ul class="flex justify-between padding-ul">
+                    <li class="font-bold">Unlimited members</li>
+                    <li></li>
+                    <li></li>
+                    <li class="check">&check;</li>
+                </ul>
+                <hr>
+
+            </section>
+
+
+
+        </main>
+        <footer> Copyright &copy; FitYourSelf | All rights reserved</footer>
+    </div>
+    </container>
+    <script src="script.js"></script>
+</body>
+
+</html>
